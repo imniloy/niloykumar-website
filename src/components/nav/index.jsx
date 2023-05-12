@@ -20,7 +20,7 @@ const NavBar = () => {
         navbarColor
           ? "bg-stickyNavbarBackground shadow-shadow1 backdrop-blur-lg md:h-[90px]"
           : "bg-transparent md:h-[100px]"
-      }`}
+      } relative`}
     >
       <img
         className={`${navbarColor ? "nav-logo-stricky" : "nav-logo"}`}
@@ -30,13 +30,48 @@ const NavBar = () => {
 
       <nav className="desktop-nav-items font-montserrat">
         <ul className="flex items-center md:gap-x-3 lg:gap-x-5">
-          <li className="px-2 py-1 uppercase text-sm font-normal">Home</li>
-          <li className="px-2 py-1 uppercase text-sm font-normal">About Me</li>
-          <li className="px-2 py-1 uppercase text-sm font-normal">Skills</li>
-          <li className="px-2 py-1 uppercase text-sm font-normal">Services</li>
-          <li className="px-2 py-1 uppercase text-sm font-normal">Projects</li>
-          <li className="px-2 py-1 uppercase text-sm font-normal">Blogs</li>
-          <li className="px-2 py-1 uppercase text-sm font-normal">Contract</li>
+          <li
+            className="px-2 py-1 uppercase text-sm font-normal cursor-pointer"
+            onClick={() => console.log("object")}
+          >
+            Home
+          </li>
+          <li
+            className="px-2 py-1 uppercase text-sm font-normal cursor-pointer"
+            onClick={() => console.log("object")}
+          >
+            About Me
+          </li>
+          <li
+            className="px-2 py-1 uppercase text-sm font-normal cursor-pointer"
+            onClick={() => console.log("object")}
+          >
+            Skills
+          </li>
+          <li
+            className="px-2 py-1 uppercase text-sm font-normal cursor-pointer"
+            onClick={() => console.log("object")}
+          >
+            Services
+          </li>
+          <li
+            className="px-2 py-1 uppercase text-sm font-normal cursor-pointer"
+            onClick={() => console.log("object")}
+          >
+            Projects
+          </li>
+          <li
+            className="px-2 py-1 uppercase text-sm font-normal cursor-pointer"
+            onClick={() => console.log("object")}
+          >
+            Blogs
+          </li>
+          <li
+            className="px-2 py-1 uppercase text-sm font-normal cursor-pointer"
+            onClick={() => console.log("object")}
+          >
+            Contract
+          </li>
         </ul>
       </nav>
 

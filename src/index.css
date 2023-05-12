@@ -92,11 +92,11 @@
 
 @layer components {
   .navbar {
-    @apply sticky top-0 flex items-center justify-between min-w-full h-20 text-secondary transition-all ease-in-out;
+    @apply sticky top-0 flex items-center justify-between min-w-full h-20 text-secondary transition-all ease-in-out z-50;
   }
 
   .navbar-desktop {
-    @apply md:px-6 lg:px-16 xl:px-20 z-50;
+    @apply md:px-6 lg:px-16 xl:px-20;
   }
 
   .navbar-mobile {
