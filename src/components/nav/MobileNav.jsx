@@ -15,10 +15,16 @@ const MobileNav = () => {
         onClick={changeState}
       />
       {/* black background */}
-      <div
+      {/* <div
         className={`${
           showMenu ? "w-screen h-screen" : "w-0 h-0"
         } bg-[rgba(0,0,0,0.8)] absolute inset-0`}
+        onClick={() => setShowMenu(!showMenu)}
+      ></div> */}
+      <div
+        className={`${
+          showMenu ? " translate-x-[100%] h-screen" : "w-0 h-0"
+        } bg-[rgba(0,0,0,0.8)] w-screen absolute inset-0`}
         onClick={() => setShowMenu(!showMenu)}
       ></div>
       {/* forground sidebar */}
