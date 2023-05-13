@@ -16,7 +16,7 @@ const NavBar = () => {
 
   return (
     <header
-      className={`navbar md:navbar-desktop ${
+      className={`navbar navbar-mobile md:navbar-desktop ${
         navbarColor
           ? "bg-stickyNavbarBackground shadow-shadow1 backdrop-blur-lg md:h-[90px]"
           : "bg-transparent md:h-[100px]"
@@ -29,7 +29,7 @@ const NavBar = () => {
       />
 
       <nav className="desktop-nav-items font-montserrat">
-        <ul className="flex items-center md:gap-x-3 lg:gap-x-5">
+        <ul className="flex items-center md:gap-x-1 840px:gap-3 lg:gap-x-5">
           <li
             className="px-2 py-1 uppercase text-sm font-normal cursor-pointer"
             onClick={() => console.log("object")}
@@ -40,7 +40,7 @@ const NavBar = () => {
             className="px-2 py-1 uppercase text-sm font-normal cursor-pointer"
             onClick={() => console.log("object")}
           >
-            About Me
+            About
           </li>
           <li
             className="px-2 py-1 uppercase text-sm font-normal cursor-pointer"

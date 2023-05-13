@@ -3,16 +3,22 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        "840px": "840px",
+      },
       backgroundImage: {
         background1: "var(--background-color-1)",
         "hero-animated-bg": "var(--background-gradient-color-1)",
       },
 
+      borderColor: {
+        lightn: "var(--color-lightn)",
+      },
       backgroundColor: {
         background2: "var(--background-color-2)",
         bgBlackWave: "var(--color-heading-wv)",
         stickyNavbarBackground: "var(--sticky-navbar-background)",
-        sidebarBg: "var(--sidebar-background)"
+        sidebarBg: "var(--sidebar-background)",
       },
       gradientColorStops: {
         animatedBackground: "var(--background-gradient-color-1)",
@@ -21,6 +27,7 @@ export default {
         primary: "var(--color-primary)",
         secondary: "var(--color-secondary)",
         lightn: "var(--color-lightn)",
+
         // primaryHoverGradient: "var(--gradient-primary-color-hover)",
       },
       fontFamily: {

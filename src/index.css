@@ -25,7 +25,6 @@
       #07b39b,
       #6fba82
     );
-    /* --background-gradient-color-1: #fff; */
     --shadow-1: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
     --shadow-2: inset 21px 21px 19px #181a1d, inset -21px -21px 19px #202225;
     --shadow-3: inset 21px 21px 19px #1c1e22, inset -21px -21px 19px #262a2e;
@@ -102,6 +101,18 @@
 
   .navbar-mobile {
     @apply px-2;
+  }
+
+  .mobile-nav-social-media-container {
+    @apply flex items-center pt-5 space-x-3;
+  }
+
+  .mobile-nav-menu-item {
+    @apply py-3 text-sm uppercase font-medium text-lightn font-montserrat;
+  }
+
+  .mobile-nav-social-media {
+    @apply p-4 bg-background2 rounded ;
   }
 
   .nav-logo {
