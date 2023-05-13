@@ -12,6 +12,7 @@ export default {
         background2: "var(--background-color-2)",
         bgBlackWave: "var(--color-heading-wv)",
         stickyNavbarBackground: "var(--sticky-navbar-background)",
+        sidebarBg: "var(--sidebar-background)"
       },
       gradientColorStops: {
         animatedBackground: "var(--background-gradient-color-1)",

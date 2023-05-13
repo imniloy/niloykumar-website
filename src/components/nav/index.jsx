@@ -16,11 +16,11 @@ const NavBar = () => {
 
   return (
     <header
-      className={`navbar navbar-mobile md:navbar-desktop ${
+      className={`navbar md:navbar-desktop ${
         navbarColor
           ? "bg-stickyNavbarBackground shadow-shadow1 backdrop-blur-lg md:h-[90px]"
           : "bg-transparent md:h-[100px]"
-      } relative`}
+      } `}
     >
       <img
         className={`${navbarColor ? "nav-logo-stricky" : "nav-logo"}`}

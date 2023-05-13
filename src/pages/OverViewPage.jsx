@@ -8,12 +8,11 @@ const OverViewPage = () => {
       <NavBar />
       <div className="max-w-screen-xl mx-auto">
         <HeroSection />
-        {/* <HeroSection />
         <div className="bg-red-600 h-52 w-52"></div>
         <div className="bg-red-600 h-52 w-52"></div>
         <div className="bg-red-600 h-52 w-52"></div>
         <div className="bg-red-600 h-52 w-52"></div>
-        <div className="bg-red-600 h-52 w-52"></div> */}
+        <div className="bg-red-600 h-52 w-52"></div>
       </div>
     </main>
   );
