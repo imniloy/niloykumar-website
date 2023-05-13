@@ -5,7 +5,7 @@ const NavBar = () => {
   const [navbarColor, setNavbarColor] = useState(false);
   // change navigation bar color depending on scroll position...
   const changeNavbarProperties = () => {
-    if (window.scrollY >= 50) {
+    if (window.scrollY >= 60) {
       setNavbarColor(true);
     } else {
       setNavbarColor(false);

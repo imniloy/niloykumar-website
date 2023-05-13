@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Bars3Icon } from "@heroicons/react/24/solid";
+import { XMarkIcon } from "@heroicons/react/24/outline";
 
 const MobileNav = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -23,14 +24,35 @@ const MobileNav = () => {
       {/* forground sidebar */}
       <div
         className={`${
-          showMenu ? "sm:w-[375px] w-[320px]" : "w-0"
-        } absolute top-0 left-0 bottom-0 h-screen bg-sidebarBg z-[9999] transition-all duration-[400ms] ease-in-out`}
+          showMenu
+            ? "sm:translate-x-[0px] translate-x-[0px]"
+            : "sm:-translate-x-[375px] -translate-x-[320px]"
+        } absolute top-0 left-0 bottom-0  h-screen bg-sidebarBg z-[9999] transition-all duration-[700ms] ease-in-out`}
       >
-        <div className="w-full flex justify-between items-center">
-          <img
-            src="https://rainbowit.net/html/inbio/assets/images/logo/logos-circle.png"
-            alt=""
-          />
+        <div className={`${showMenu ? "sm:w-[375px] w-[320px] p-3" : "w-0"}`}>
+          <ul className="w-full flex justify-between items-center">
+            <li>
+              <img
+                src="https://rainbowit.net/html/inbio/assets/images/logo/logos-circle.png"
+                alt=""
+              />
+            </li>
+
+            <li className="">
+              <XMarkIcon className=" " />
+            </li>
+          </ul>
+          <ul
+            className={`${
+              showMenu ? "w-full block" : "w-0"
+            } transition-all duration-700 ease-linear`}
+          >
+            <li className="block w-0">aaa</li>
+            <li>bb</li>
+            <li>aaa</li>
+            <li>aaa</li>
+            <li>aaa</li>
+          </ul>
         </div>
       </div>
     </nav>

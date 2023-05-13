@@ -18,7 +18,7 @@ const HeroSection = () => {
                 Hi, I’m <span className="text-primary">Niloy Kumar</span>
                 <span className="block">
                   a
-                  <Typewriter
+                  {/* <Typewriter
                     words={[" Designer", " Developer", "  Programmer"]}
                     loop={false}
                     cursor
@@ -26,7 +26,7 @@ const HeroSection = () => {
                     typeSpeed={90}
                     deleteSpeed={8}
                     delaySpeed={1000}
-                  />
+                  /> */}
                 </span>
               </h1>
 
