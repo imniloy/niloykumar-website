@@ -5,6 +5,7 @@ export default {
     extend: {
       screens: {
         "840px": "840px",
+        "1100px": "1100px",
       },
       backgroundImage: {
         background1: "var(--background-color-1)",

@@ -17,7 +17,7 @@ const HeroParticleEffect = ({ children }) => {
       init={particlesInit}
       loaded={particlesLoaded}
       width="100%"
-      height="100vh"
+      height="97vh"
       className="!absolute !top-0 !left-0 !right-0 -z-[5]"
       // style={{}}
       options={{
@@ -29,7 +29,7 @@ const HeroParticleEffect = ({ children }) => {
         interactivity: {
           events: {
             onClick: {
-              enable: true,
+              enable: false,
               mode: "bubble",
             },
             onHover: {
@@ -41,7 +41,7 @@ const HeroParticleEffect = ({ children }) => {
           },
           modes: {
             bubble: {
-              distance: 40,
+              distance: 1000,
               duration: 2,
               size: 40,
             },

@@ -5,15 +5,15 @@ import HeroParticleEffect from "./ParticleEffect";
 const HeroSection = () => {
   return (
     <section className="hero-section">
-      <div className="content-section gap-20 z-[8888]">
+      <div className="content-section xl:gap-16 2xl:gap-20 z-[8888]">
         {/*info container */}
-        <div className="info-section mt-4 text-secondary font-montserrat max-w-3xl px-4">
+        <div className="info-section flex flex-col justify-center mt-0 text-secondary font-montserrat max-w-3xl px-4">
           <span className="subtitle block uppercase text-sm tracking-[3px] mb-5">
             WELCOME TO MY WORLD
           </span>
           {/* name and description */}
           <div className="text-white">
-            <h1 className="title font-bold text-6xl leading-tight mb-5">
+            <h1 className="title font-bold lg:text-[44px] 1100px:text-5xl 2xl:text-6xl !leading-tight mb-5">
               Hi, I’m <span className="text-primary">Niloy Kumar</span>
               <span className="block">
                 a
@@ -29,7 +29,7 @@ const HeroSection = () => {
               </span>
             </h1>
 
-            <p className="pr-8 text-base leading-[30px] text-lightn">
+            <p className="pr-4 text-justify lg:text-left text-base leading-[30px] text-lightn">
               I'm a{" "}
               <span className="capitalize font-semibold ">
                 Software Engineer
@@ -42,7 +42,7 @@ const HeroSection = () => {
             </p>
           </div>
           {/* buttons */}
-          <div className="my-8 space-x-6 z-[1111]">
+          <div className="mt-8 space-x-6">
             <button className="hero-btn group">
               <span className="group-hover:text-transparent group-hover:bg-gradient-to-tr group-hover:from-[#009e66] group-hover:to-[#01e998] group-hover:bg-clip-text">
                 View Works
@@ -56,9 +56,9 @@ const HeroSection = () => {
           </div>
         </div>
         {/* profile Image container */}
-        <div className="px-4 cursor-pointer">
-          <div className="animate-hero-animated-bg relative rounded-full overflow-hidden h-[500px] w-[500px] flex justify-center items-center">
-            <div className="h-[475px] w-[475px] overflow-hidden rounded-full">
+        <div className="px-4">
+          <div className="animate-hero-animated-bg relative rounded-full overflow-hidden lg:h-[400px] lg:w-[400px] xl:h-[450px] xl:w-[450px] 2xl:h-[500px] 2xl:w-[500px] flex justify-center items-center">
+            <div className="lg:h-[376px] lg:w-[376px] xl:h-[420px] xl:w-[420px] 2xl:h-[475px] 2xl:w-[475px] overflow-hidden rounded-full">
               <img src="/images/Hero-Profile2.png" className="cover" alt="" />
             </div>
           </div>

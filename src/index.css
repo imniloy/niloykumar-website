@@ -96,7 +96,7 @@
   }
 
   .navbar-desktop {
-    @apply md:px-6 lg:px-16 xl:px-20;
+    @apply md:px-6 lg:px-12 xl:px-20;
   }
 
   .navbar-mobile {
@@ -134,7 +134,7 @@
     transition-all duration-300 hover:-translate-y-1;
   }
   .content-section {
-    @apply flex items-center justify-between my-24;
+    @apply flex items-center justify-between my-28;
   }
 }
 
