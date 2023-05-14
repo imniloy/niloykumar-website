@@ -134,7 +134,7 @@
     transition-all duration-300 hover:-translate-y-1;
   }
   .content-section {
-    @apply flex items-center justify-between my-28;
+    @apply flex flex-col gap-8 mt-10 mb-12 sm:mt-12 sm:mb-16 sm:gap-10 md:gap-12 lg:flex-row lg:items-center lg:justify-between md:px-4 lg:px-0 lg:my-28 xl:gap-16 2xl:gap-20 z-[8888];
   }
 }
 
