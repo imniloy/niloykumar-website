@@ -53,7 +53,7 @@ export default {
         "12px": "var(--border-width)",
       },
       animation: {
-        "hero-animated-bg": "animate-gradient 6s ease alternate infinite",
+        "hero-animated-bg": "animate-gradient 4s ease alternate infinite",
       },
       keyframes: {
         "animate-gradient": {

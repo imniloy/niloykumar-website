@@ -112,7 +112,7 @@
   }
 
   .mobile-nav-social-media {
-    @apply p-4 bg-background2 rounded ;
+    @apply p-3 bg-background2 rounded;
   }
 
   .nav-logo {
@@ -127,14 +127,14 @@
     @apply hidden md:block;
   }
   .hero-section {
-    @apply w-full 2xl:h-[780px] overflow-hidden border-b border-[#0d1013];
+    @apply w-full min-h-[calc(100vh_-_100px)] my-auto overflow-hidden border-b border-[#0d1013];
   }
   .hero-btn {
     @apply px-8 py-4 uppercase rounded-md text-sm text-primary font-semibold bg-background1 !shadow-shadow1 
     transition-all duration-300 hover:-translate-y-1;
   }
   .content-section {
-    @apply flex items-center justify-between;
+    @apply flex items-center justify-between my-24;
   }
 }
 

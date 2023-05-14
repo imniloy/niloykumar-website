@@ -18,7 +18,7 @@ const HeroParticleEffect = ({ children }) => {
       loaded={particlesLoaded}
       width="100%"
       height="100vh"
-      className="!absolute !top-0 !left-0 !right-0"
+      className="!absolute !top-0 !left-0 !right-0 -z-[5]"
       // style={{}}
       options={{
         fullScreen: {
@@ -62,7 +62,7 @@ const HeroParticleEffect = ({ children }) => {
             color: "#009e66",
             distance: 400,
             enable: true,
-            opacity: 0.25,
+            opacity: 0.15,
             width: 1,
           },
           collisions: {
@@ -92,7 +92,7 @@ const HeroParticleEffect = ({ children }) => {
             type: "circle",
           },
           size: {
-            value: { min: 1, max: 5 },
+            value: { min: 1, max: 8 },
           },
         },
         detectRetina: true,
