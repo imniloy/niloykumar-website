@@ -62,7 +62,7 @@ const HeroParticleEffect = ({ children }) => {
             color: "#009e66",
             distance: 400,
             enable: true,
-            opacity: 0.15,
+            opacity: 0.2,
             width: 1,
           },
           collisions: {
@@ -81,12 +81,12 @@ const HeroParticleEffect = ({ children }) => {
           number: {
             density: {
               enable: true,
-              area: 800,
+              area: 700,
             },
-            value: 40,
+            value: 20,
           },
           opacity: {
-            value: 0.2,
+            value: .3,
           },
           shape: {
             type: "circle",

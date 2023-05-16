@@ -9,7 +9,7 @@ const MobileNav = () => {
   };
 
   return (
-    <nav className={`block md:hidden`}>
+    <nav className={`block lg:hidden`}>
       <Bars3Icon
         className="h-9 w-9 text-primary cursor-pointer"
         onClick={changeState}

@@ -96,7 +96,7 @@
   }
 
   .navbar-desktop {
-    @apply md:px-6 lg:px-12 xl:px-20;
+    @apply lg:px-12 xl:px-20;
   }
 
   .navbar-mobile {
@@ -124,7 +124,7 @@
   }
 
   .desktop-nav-items {
-    @apply hidden md:block;
+    @apply hidden lg:block;
   }
   .hero-section {
     @apply w-full min-h-[calc(100vh_-_100px)] my-auto overflow-hidden border-b border-[#0d1013];

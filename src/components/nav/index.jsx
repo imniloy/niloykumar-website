@@ -16,7 +16,7 @@ const NavBar = () => {
 
   return (
     <header
-      className={`navbar navbar-mobile md:navbar-desktop ${
+      className={`navbar navbar-mobile lg:navbar-desktop ${
         navbarColor
           ? "bg-stickyNavbarBackground shadow-shadow1 backdrop-blur-lg md:h-[90px]"
           : "bg-transparent md:h-[100px]"
