@@ -59,7 +59,7 @@ const HeroSection = () => {
         <div className="500px:px-4 order-1 lg:order-2">
           <div className="animate-hero-animated-bg relative rounded-full overflow-hidden h-[320px] w-[320px] 500px:h-[425px] 500px:w-[425px] mx-auto md:h-[500px] md:w-[500px] lg:h-[400px] lg:w-[400px] xl:h-[450px] xl:w-[450px] 2xl:h-[500px] 2xl:w-[500px] flex justify-center items-center">
             <div className="h-[300px] w-[300px] 500px:h-[400px] 500px:w-[400px] md:h-[476px] md:w-[476px] lg:h-[376px] lg:w-[376px] xl:h-[420px] xl:w-[420px] 2xl:h-[475px] 2xl:w-[475px] overflow-hidden rounded-full">
-              <img src="/images/Hero-Profile2.png" className="cover" alt="" />
+              <img src="/images/nn.jpeg" className="cover h-full" alt="" />
             </div>
           </div>
         </div>

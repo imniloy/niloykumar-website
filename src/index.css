@@ -91,6 +91,7 @@
 }
 
 @layer components {
+  /* some class that common to all sections */
   .navbar {
     @apply sticky top-0 flex items-center justify-between min-w-full h-20 text-secondary transition-all ease-in-out z-50;
   }
@@ -126,6 +127,16 @@
   .desktop-nav-items {
     @apply hidden lg:block;
   }
+
+  .section-subtitle {
+    @apply uppercase text-primary tracking-[1px] font-montserrat text-center text-sm font-medium mb-2;
+  }
+
+  .section-title {
+    @apply capitalize font-bold text-6xl text-center text-lightn font-montserrat mt-4;
+  }
+  /* end common class lists */
+  /* heroSection */
   .hero-section {
     @apply w-full min-h-[calc(100vh_-_100px)] my-auto overflow-hidden border-b border-[#0d1013];
   }
@@ -135,6 +146,27 @@
   }
   .content-section {
     @apply flex flex-col gap-8 mt-10 mb-12 sm:mt-12 sm:mb-16 sm:gap-10 md:gap-12 lg:flex-row lg:items-center lg:justify-between md:px-4 lg:px-0 lg:my-28 xl:gap-16 2xl:gap-20 z-[8888];
+  }
+  /* aboutMe-section */
+  .aboutMe-section {
+    @apply my-24 w-full overflow-hidden border-b border-[#0d1013];
+  }
+  .aboutMe-info-container {
+    @apply flex justify-between items-center gap-x-14 py-16;
+  }
+
+  .aboutMe-profile-img {
+    @apply w-[50%] min-h-full bg-cover;
+  }
+
+  .aboutMe-info {
+    @apply w-[50%] text-secondary font-poppins ;
+  }
+.personal-info {
+  @apply mt-5 space-y-5
+}
+  .personal-info-item {
+    @apply w-[50%] inline-block mb-4 pl-4;
   }
 }
 

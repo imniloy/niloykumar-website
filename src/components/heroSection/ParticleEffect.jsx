@@ -75,7 +75,7 @@ const HeroParticleEffect = ({ children }) => {
               default: "bounce",
             },
             random: true,
-            speed: 2,
+            speed: 1.75,
             straight: false,
           },
           number: {
@@ -86,7 +86,7 @@ const HeroParticleEffect = ({ children }) => {
             value: 20,
           },
           opacity: {
-            value: .3,
+            value: 0.3,
           },
           shape: {
             type: "circle",
