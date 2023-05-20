@@ -1,6 +1,6 @@
 import React from "react";
 import Education from "./Education";
-import { resumeSection } from "../../data/index";
+import { resumeSection } from "../../../data/index";
 const EducaionList = () => {
   const { educationRelatedInfo } = resumeSection || {};
 

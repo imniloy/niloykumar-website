@@ -22,6 +22,7 @@ export default {
         bgBlackWave: "var(--color-heading-wv)",
         stickyNavbarBackground: "var(--sticky-navbar-background)",
         sidebarBg: "var(--sidebar-background)",
+        hoverbg: "var(--hover-background)",
       },
       gradientColorStops: {
         animatedBackground: "var(--background-gradient-color-1)",

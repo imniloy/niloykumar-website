@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { resumeSection } from "../../data/index";
-import Education from "./Education";
-import EducaionList from "./EducaionList";
+import EducaionList from "./education/EducaionList";
 
 const Resume = () => {
   const { sectionSubtitle, sectionHeadtitle, tabNavigation } =
