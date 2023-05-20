@@ -11,6 +11,7 @@ export default {
       backgroundImage: {
         background1: "var(--background-color-1)",
         "hero-animated-bg": "var(--background-gradient-color-1)",
+        niloyProfileImg: "var(/images/nn.jpeg)",
       },
 
       borderColor: {
@@ -29,6 +30,7 @@ export default {
         primary: "var(--color-primary)",
         secondary: "var(--color-secondary)",
         lightn: "var(--color-lightn)",
+        body: "var(--color-body)",
 
         // primaryHoverGradient: "var(--gradient-primary-color-hover)",
       },
@@ -55,20 +57,15 @@ export default {
         "12px": "var(--border-width)",
       },
       animation: {
-        "hero-animated-bg": "animate-gradient 4s ease alternate infinite",
+        "hero-animated-bg": "animate-gradient 1.5s ease alternate infinite",
       },
       keyframes: {
         "animate-gradient": {
           "0%": {
-            // rotate: "0deg",
             backgroundImage:
               "linear-gradient(60deg,#f79533,#f37055, #ef4e7b, #a166ab)",
           },
-          "25%": {
-            backgroundImage:
-              "linear-gradient(60deg,#ef4e7b,#a166ab, #5073b8, #1098ad)",
-          },
-          "75%": {
+          "%50": {
             backgroundImage:
               "linear-gradient(60deg,#5073b8,#1098ad, #07b39b, #6fba82)",
           },

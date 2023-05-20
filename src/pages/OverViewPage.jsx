@@ -2,6 +2,7 @@ import React from "react";
 import HeroSection from "../components/heroSection";
 import NavBar from "../components/nav";
 import AboutMe from "../components/aboutSection";
+import Resume from "../components/resume";
 
 const OverViewPage = () => {
   return (
@@ -11,11 +12,13 @@ const OverViewPage = () => {
         <div className="lg:mx-12 xl:max-w-[1200px] 2xl:max-w-[1300px] xl:mx-20 2xl:mx-auto">
           <HeroSection />
           <AboutMe />
+          <Resume />
+          {/* <div className="bg-red-600 h-52 w-52"></div> */}
+          {/* <div className="bg-red-600 h-52 w-52"></div>
           <div className="bg-red-600 h-52 w-52"></div>
           <div className="bg-red-600 h-52 w-52"></div>
           <div className="bg-red-600 h-52 w-52"></div>
-          <div className="bg-red-600 h-52 w-52"></div>
-          <div className="bg-red-600 h-52 w-52"></div>
+          <div className="bg-red-600 h-52 w-52"></div> */}
         </div>
       </div>
     </main>

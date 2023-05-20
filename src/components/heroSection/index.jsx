@@ -43,12 +43,12 @@ const HeroSection = () => {
           </div>
           {/* buttons */}
           <div className="flex justify-between 500px:block  mt-6 sm:mt-8 500px:space-x-6">
-            <button className="hero-btn group">
+            <button className="btn-type-1 group">
               <span className="group-hover:text-transparent group-hover:bg-gradient-to-tr group-hover:from-[#009e66] group-hover:to-[#01e998] group-hover:bg-clip-text">
                 View Works
               </span>
             </button>
-            <button className="hero-btn group">
+            <button className="btn-type-1 group">
               <span className="group-hover:text-transparent group-hover:bg-gradient-to-tr group-hover:from-[#009e66] group-hover:to-[#01e998] group-hover:bg-clip-text">
                 Contact Me
               </span>
@@ -64,7 +64,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <HeroParticleEffect />
+      {/* <HeroParticleEffect /> */}
     </section>
   );
 };

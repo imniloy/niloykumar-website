@@ -46,19 +46,19 @@ const NavBar = () => {
             className="px-2 py-1 uppercase text-sm font-normal cursor-pointer"
             onClick={() => console.log("object")}
           >
-            Skills
+            FEATURES
           </li>
           <li
             className="px-2 py-1 uppercase text-sm font-normal cursor-pointer"
             onClick={() => console.log("object")}
           >
-            Services
+            Portfoilo
           </li>
           <li
             className="px-2 py-1 uppercase text-sm font-normal cursor-pointer"
             onClick={() => console.log("object")}
           >
-            Projects
+            Resume
           </li>
           <li
             className="px-2 py-1 uppercase text-sm font-normal cursor-pointer"

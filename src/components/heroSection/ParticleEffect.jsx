@@ -33,7 +33,7 @@ const HeroParticleEffect = ({ children }) => {
               mode: "bubble",
             },
             onHover: {
-              enable: true,
+              enable: false,
               mode: "repulse",
               opacity: 0.8,
             },
@@ -61,7 +61,7 @@ const HeroParticleEffect = ({ children }) => {
           links: {
             color: "#009e66",
             distance: 400,
-            enable: true,
+            enable: false,
             opacity: 0.2,
             width: 1,
           },
@@ -75,7 +75,7 @@ const HeroParticleEffect = ({ children }) => {
               default: "bounce",
             },
             random: true,
-            speed: 1.75,
+            speed: 1,
             straight: false,
           },
           number: {
