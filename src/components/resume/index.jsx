@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { resumeSection } from "../../data/index";
 import EducaionList from "./education/EducaionList";
+import ProfessionalSkills from "./skill/ProfessionalSkills";
+import AchievementsList from "./achievement/AchievementList";
 
 const Resume = () => {
   const { sectionSubtitle, sectionHeadtitle, tabNavigation } =
@@ -16,7 +18,7 @@ const Resume = () => {
       </>
 
       {/* options/tablist to show Details */}
-      <ul className="w-full flex justify-between items-center mt-11 bg-background1 shadow-shadow1 rounded-lg">
+      <ul className="flex flex-col sm:flex-row justify-between items-center mt-[50px] bg-background1 shadow-shadow1 rounded-lg mx-4 sm:mx-8 lg:mx-0">
         {tabNavigation.map((item, index) => (
           <li
             key={`${item + index}`}
@@ -33,7 +35,9 @@ const Resume = () => {
       </ul>
 
       {/* items to show based on user selected options */}
-      <EducaionList />
+      {seletedNav === "Education" && <EducaionList />}
+      {seletedNav === "Professional Skills" && <ProfessionalSkills />}
+      {seletedNav === "Achievements" && <AchievementsList />}
     </section>
   );
 };

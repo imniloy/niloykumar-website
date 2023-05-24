@@ -64,7 +64,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      {/* <HeroParticleEffect /> */}
+      <HeroParticleEffect />
     </section>
   );
 };

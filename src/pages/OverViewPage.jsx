@@ -3,6 +3,7 @@ import HeroSection from "../components/heroSection";
 import NavBar from "../components/nav";
 import AboutMe from "../components/aboutSection";
 import Resume from "../components/resume";
+import AllProjects from "../components/projectsSection";
 
 const OverViewPage = () => {
   return (
@@ -13,12 +14,8 @@ const OverViewPage = () => {
           <HeroSection />
           <AboutMe />
           <Resume />
-          {/* <div className="bg-red-600 h-52 w-52"></div> */}
-          {/* <div className="bg-red-600 h-52 w-52"></div>
+          <AllProjects />
           <div className="bg-red-600 h-52 w-52"></div>
-          <div className="bg-red-600 h-52 w-52"></div>
-          <div className="bg-red-600 h-52 w-52"></div>
-          <div className="bg-red-600 h-52 w-52"></div> */}
         </div>
       </div>
     </main>
