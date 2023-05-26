@@ -18,8 +18,8 @@ const MobileNav = () => {
       <div
         className={`${
           showMenu
-            ? "w-screen h-screen transition-all ease-in-out"
-            : "w-screen h-screen hidden transition-all ease-in-out !duration-700"
+            ? " h-screen transition-all ease-in-out"
+            : " h-screen hidden transition-all ease-in-out !duration-700"
         } bg-[rgba(0,0,0,0.8)] absolute inset-0`}
         onClick={() => setShowMenu(!showMenu)}
       ></div>

@@ -77,7 +77,7 @@ const ProfessionalSkills = () => {
       initial={{ opacity: "0%" }}
       animate={{ opacity: "100%" }}
       transition={{ duration: 0.5, ease: "easeInOut" }}
-      className="ProfessionalSkills mx-4 sm:mx-8 lg:mx-2 mt-10 sm:mt-14 flex flex-col sm:flex-row gap-y-4 sm:gap-y-0 gap-x-20 text-white items-center"
+      className="ProfessionalSkills mx-2 500px:mx-4 sm:mx-8 lg:mx-2 mt-10 sm:mt-14 flex flex-col sm:flex-row gap-y-4 sm:gap-y-0 gap-x-20 text-white items-center"
     >
       <ul className="w-[100%] sm:basis-1/2">
         {firstHalf.map((item, index) => (

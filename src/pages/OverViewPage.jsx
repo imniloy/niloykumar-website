@@ -15,7 +15,7 @@ const OverViewPage = () => {
           <AboutMe />
           <Resume />
           <AllProjects />
-          <div className="bg-red-600 h-52 w-52"></div>
+          {/* <div className="fixed inset-0 h-full w-full bg-red-600 z-[1000000000] overflow-y-hidden"></div> */}
         </div>
       </div>
     </main>
