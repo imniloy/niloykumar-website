@@ -130,11 +130,11 @@
   }
 
   .section-subtitle {
-    @apply uppercase text-primary tracking-[1px] font-montserrat text-center text-sm font-medium mb-2;
+    @apply uppercase text-primary tracking-[1px] font-montserrat text-center text-sm font-medium mb-2 px-1;
   }
 
   .section-title {
-    @apply capitalize font-bold text-4xl md:text-[40px] lg:text-5xl xl:text-6xl text-center text-lightn font-montserrat mt-2 lg:mt-4;
+    @apply capitalize font-bold text-4xl md:text-[40px] lg:text-5xl xl:text-6xl text-center text-lightn font-montserrat mt-2 lg:mt-4  px-1;
   }
 
   .btn-type-1 {

@@ -84,3 +84,21 @@ export const allProjectsSection = {
     },
   ],
 };
+
+export const contractSection = {
+  sectionSubtitle: "Say Hello to me 😃 share Details about your project",
+  sectionHeadtitle: "Contact With Me",
+  contractImage: "/images/contact.png",
+  profileName: "Niloy Kumar",
+  jobDescription: "Software Engineer",
+  message:
+    "I am available for freelance work. Connect with me via and call in to my account.",
+  phoneNumber: "+8801307065475",
+  email: "imniloy8@gmail.com",
+  socalMedia: {
+    facebook: "https://www.facebook.com/imniloy8/",
+    instragram: "https://www.instagram.com/iamniloykumar/",
+    linkedin: "https://www.linkedin.com/in/niloy-kumar-762067234/",
+  },
+
+};

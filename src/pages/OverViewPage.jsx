@@ -4,6 +4,7 @@ import NavBar from "../components/nav";
 import AboutMe from "../components/aboutSection";
 import Resume from "../components/resume";
 import AllProjects from "../components/projectsSection";
+import ContractSection from "../components/contractSection";
 
 const OverViewPage = () => {
   return (
@@ -15,7 +16,7 @@ const OverViewPage = () => {
           <AboutMe />
           <Resume />
           <AllProjects />
-          {/* <div className="fixed inset-0 h-full w-full bg-red-600 z-[1000000000] overflow-y-hidden"></div> */}
+          <ContractSection />
         </div>
       </div>
     </main>

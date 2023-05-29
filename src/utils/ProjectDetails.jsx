@@ -7,7 +7,7 @@ const ProjectDetails = ({ project, controlFunc }) => {
     project || {};
 
   return (
-    <div className="bg-background1 my-auto lg:mt-0 lg:w-[90%] xl:w-[80%] 2xl:w-[70%] shadow-shadow1 rounded-2xl">
+    <div className="bg-background1 my-auto lg:w-[90%] xl:w-[80%] 2xl:w-[70%] shadow-shadow1 rounded-2xl">
       <div
         className="h-11  w-11 flex justify-center items-center shadow-shadow2 rounded-full cursor-pointer ml-auto hover:text-primary bg-background2"
         onClick={controlFunc}
@@ -16,7 +16,7 @@ const ProjectDetails = ({ project, controlFunc }) => {
       </div>
       {/* details sections */}
       <div className="px-4 pb-10 500px:px-7 500px:pb-7 md:px-11 md:pb-11 pt-[1px] flex flex-col lg:flex-row justify-between items-center gap-y-5 lg:gap-y-0 lg:gap-x-10">
-        <div className="grow lg:basis-1/2 bg-red-400 w-full h-full overflow-hidden rounded-xl">
+        <div className="grow lg:basis-1/2 w-full h-full overflow-hidden rounded-xl">
           <img
             src={image}
             className="hover:scale-[1.05] w-full h-[40vh] 500px:h-[50vh] lg:h-full transition-all duration-300"
