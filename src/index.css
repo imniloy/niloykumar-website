@@ -151,7 +151,7 @@
   }
   /* aboutMe-section */
   .new-section {
-    @apply py-16 sm:py-20 lg:py-24 w-full overflow-hidden border-b border-[#0d1013];
+    @apply py-16 sm:py-20 lg:py-[100px] w-full overflow-hidden border-b border-[#0d1013];
   }
   .aboutMe-info-container {
     @apply px-4 sm:px-8 lg:px-4 gap-y-10 lg:flex lg:justify-between lg:items-center lg:gap-x-8 xl:gap-x-14 lg:pt-[50px];

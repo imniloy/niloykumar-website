@@ -90,7 +90,7 @@ export const contractSection = {
   sectionHeadtitle: "Contact With Me",
   contractImage: "/images/contact.png",
   profileName: "Niloy Kumar",
-  jobDescription: "Software Engineer",
+  jobDescription: "Junior Software Engineer",
   message:
     "I am available for freelance work. Connect with me via and call in to my account.",
   phoneNumber: "+8801307065475",

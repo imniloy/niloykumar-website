@@ -11,7 +11,7 @@ const ContractSection = () => {
         <p className="section-subtitle">{sectionSubtitle}</p>
         <h2 className="section-title">{sectionHeadtitle}</h2>
       </>
-      <div className="flex items-center justify-between">
+      <div className="flex items-center mt-[50px] justify-between h-fit">
         <InformationSidebar />
         <FormSidebar />
       </div>

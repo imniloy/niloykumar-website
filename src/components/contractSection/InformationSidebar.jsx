@@ -13,31 +13,59 @@ const InformationSidebar = () => {
     socalMedia,
   } = contractSection || {};
   return (
-    <div className="contact-about-area basis-1/3 p-7 bg-background2 text-lightn shadow-shadow1 rounded-xl">
-      <div className="image-container rounded-xl overflow-hidden">
-        <img className="" src={contractImage} alt="contractImage" />
+    <div className="contact-about-area xl:basis-[35%] p-[30px] !bg-[#212428] text-lightn shadow-shadow1 rounded-2xl">
+      <div className="image-container rounded-2xl w-full mb-8 overflow-hidden">
+        <img
+          className="hover:scale-110 transition-all duration-500 min-h-[290px]"
+          src={contractImage}
+          alt="contractImage"
+        />
       </div>
-      <div className="title-area">
-        <h1 className="">{profileName}</h1>
-        <span>{jobDescription}</span>
 
-        <div className="">
-          <p>{message}</p>
-          <span className="phone">
-            Phone: <Link to={`tel:${phoneNumber}`}>{phoneNumber}</Link>
+      <div className="text-area">
+        <div className="title-area mb-4">
+          <h1 className="text-3xl text-lightn mb-2 font-bold ">
+            {profileName}
+          </h1>
+          <span className="text-lg text-body font-poppins">
+            {jobDescription}
           </span>
-          <span className="mail">
-            Email: <Link to={`mailto:${email}`}>{email}</Link>
+        </div>
+
+        <div className="mb-7">
+          <p className="text-lg mb-5 text-body font-montserrat">{message}</p>
+          <span className="phone block text-body text-lg font-poppins">
+            Phone:{" "}
+            <Link
+              className="text-white hover:text-primary hover:underline transition-all"
+              to={`tel:${phoneNumber}`}
+            >
+              {phoneNumber}
+            </Link>
+          </span>
+          <span
+            className="mail block text-body text-lg font-poppins
+          "
+          >
+            Email:{" "}
+            <Link
+              className="text-white hover:text-primary hover:underline transition-all"
+              to={`mailto:${email}`}
+            >
+              {email}
+            </Link>
           </span>
         </div>
 
         <div className="">
-          <span className="uppercase text-lightn">Find With me</span>
+          <span className="uppercase mb-2 text-sm font-poppins font-medium text-body">
+            Find With me
+          </span>
 
-          <ul className="social-icons">
+          <ul className="social-icons mt-6 flex items-center space-x-4">
             {/* facebookIcon */}
 
-            <li className="">
+            <li className="w-[60px] h-[60px] flex justify-center items-center rounded-xl shadow-shadow1 bg-background1 transition-all duration-[400ms] hover:bg-background2 hover:-translate-y-1 cursor-pointer">
               <Link to={``}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +85,7 @@ const InformationSidebar = () => {
             </li>
 
             {/* Instagram */}
-            <li className="">
+            <li className="w-[60px] h-[60px] flex justify-center items-center rounded-xl shadow-shadow1 bg-background1 transition-all duration-[400ms] hover:bg-background2 hover:-translate-y-1 cursor-pointer">
               <Link to={``}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +107,7 @@ const InformationSidebar = () => {
             </li>
 
             {/* linkedIn */}
-            <li className="">
+            <li className="w-[60px] h-[60px] flex justify-center items-center rounded-xl shadow-shadow1 bg-background1 transition-all duration-[400ms] hover:bg-background2 hover:-translate-y-1 cursor-pointer">
               <Link to={``}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
