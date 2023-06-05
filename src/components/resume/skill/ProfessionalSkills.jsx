@@ -23,18 +23,6 @@ const SkillItem = ({ item }) => {
     });
   }, [springValue, knowledge]);
 
-  // attempt 1
-  // useEffect(() => {
-  //   if (progressTextRef.current != null) {
-  //     animate(0, Number(knowledge), {
-  //       duration: 2,
-  //       onUpdate: (cv) => {
-  //         progressTextRef.current.textContent = cv.toFixed(0);
-  //       },
-  //     });
-  //   }
-  // }, [knowledge]);
-
   return (
     <li className="w-full mt-6">
       <div className="flex justify-between items-center">
@@ -53,9 +41,13 @@ const SkillItem = ({ item }) => {
           initial={{
             width: "0%",
           }}
-          animate={{
+          whileInView={{
             width: `${knowledge}%`,
           }}
+          viewport={{ once: true }}
+          // animate={{
+          //   width: `${knowledge}%`,
+          // }}
           transition={{
             duration: 2,
             ease: "easeInOut",
@@ -77,7 +69,7 @@ const ProfessionalSkills = () => {
       initial={{ opacity: "0%" }}
       animate={{ opacity: "100%" }}
       transition={{ duration: 0.5, ease: "easeInOut" }}
-      className="ProfessionalSkills mx-2 500px:mx-4 sm:mx-8 lg:mx-2 mt-10 sm:mt-14 flex flex-col sm:flex-row gap-y-4 sm:gap-y-0 gap-x-20 text-white items-center"
+      className="ProfessionalSkills mx-2 500px:mx-4 sm:mx-8 lg:mx-4 mt-10 sm:mt-14 flex flex-col sm:flex-row gap-y-4 sm:gap-y-0 gap-x-20 text-white items-center xl:mx-auto"
     >
       <ul className="w-[100%] sm:basis-1/2">
         {firstHalf.map((item, index) => (

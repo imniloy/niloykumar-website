@@ -1,3 +1,18 @@
+export const navbar = {
+  navItems: ["home", "about", "portfolio", "contract"],
+  socalMedia: {
+    facebook: "https://www.facebook.com/imniloy8/",
+    instragram: "https://www.instagram.com/iamniloykumar/",
+    linkedin: "https://www.linkedin.com/in/niloy-kumar-762067234/",
+  },
+};
+
+export const heroSection = {
+  heroMsg:
+    "I focused on crafting user friendly experiences, I am passionate about building excellent software that improves the lives of people all over the world.",
+  heroImg: "/images/profile.png",
+};
+
 export const resumeSection = {
   sectionSubtitle: "2+ YEARS OF EXPERIENCE",
   sectionHeadtitle: "My Resume",
@@ -100,5 +115,4 @@ export const contractSection = {
     instragram: "https://www.instagram.com/iamniloykumar/",
     linkedin: "https://www.linkedin.com/in/niloy-kumar-762067234/",
   },
-
 };

@@ -6,11 +6,11 @@ const AboutMe = () => {
   useEffect(() => {
     var today = new Date();
     // Convert the date of birth to a Date object.
-    var dobDate = new Date("2003-07-24");
+    var dateOfBirth = new Date("2003-07-24");
 
-    var years = today.getFullYear() - dobDate.getFullYear();
-    var months = today.getMonth() - dobDate.getMonth();
-    var days = today.getDate() - dobDate.getDate();
+    var years = today.getFullYear() - dateOfBirth.getFullYear();
+    var months = today.getMonth() - dateOfBirth.getMonth();
+    var days = today.getDate() - dateOfBirth.getDate();
     if (years > 0 && months > 0 && days > 0) {
       setAge(years);
     } else {

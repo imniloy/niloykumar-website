@@ -18,7 +18,7 @@ const Resume = () => {
       </>
 
       {/* options/tablist to show Details */}
-      <ul className="flex flex-col sm:flex-row justify-between items-center mt-[50px] bg-background1 shadow-shadow1 rounded-lg mx-2 500px:mx-4 sm:mx-8 lg:mx-0">
+      <ul className="flex flex-col sm:flex-row justify-between items-center mt-[50px] bg-background1 shadow-shadow1 rounded-lg mx-2 sm:mx-8 lg:mx-4 xl:mx-auto">
         {tabNavigation.map((item, index) => (
           <li
             key={`${item + index}`}

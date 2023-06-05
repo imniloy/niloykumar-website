@@ -13,10 +13,10 @@ const InformationSidebar = () => {
     socalMedia,
   } = contractSection || {};
   return (
-    <div className="contact-about-area xl:basis-[35%] p-[30px] !bg-[#212428] text-lightn shadow-shadow1 rounded-2xl">
+    <div className="contact-about-area w-full basis-full lg:basis-[40%] p-6 sm:p-[30px] !bg-[#212428] text-lightn shadow-shadow1 rounded-2xl">
       <div className="image-container rounded-2xl w-full mb-8 overflow-hidden">
         <img
-          className="hover:scale-110 transition-all duration-500 min-h-[290px]"
+          className="hover:scale-110 transition-all duration-500 min-h-[290px] min-w-full"
           src={contractImage}
           alt="contractImage"
         />

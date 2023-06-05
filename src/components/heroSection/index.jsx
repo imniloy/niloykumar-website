@@ -1,8 +1,11 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import HeroParticleEffect from "./ParticleEffect";
+import { heroSection } from "../../data";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
+  const { heroMsg, heroImg } = heroSection || {};
   return (
     <section className="hero-section">
       <div className="content-section">
@@ -22,9 +25,9 @@ const HeroSection = () => {
                   loop={false}
                   cursor
                   cursorStyle="|"
-                  typeSpeed={90}
-                  deleteSpeed={8}
-                  delaySpeed={1000}
+                  typeSpeed={80}
+                  deleteSpeed={80}
+                  delaySpeed={100}
                 />
               </span>
             </h1>
@@ -35,31 +38,33 @@ const HeroSection = () => {
                 Software Engineer
               </span>{" "}
               based in{" "}
-              <span className="uppercase font-semibold">Bangladesh</span>. I
-              focused on crafting user friendly experiences, I am passionate
-              about building excellent software that improves the lives of
-              people all over the world.
+              <span className="uppercase font-semibold">Bangladesh</span>.{" "}
+              {heroMsg}
             </p>
           </div>
           {/* buttons */}
           <div className="flex justify-between 500px:block  mt-6 sm:mt-8 500px:space-x-6">
-            <button className="btn-type-1 group">
-              <span className="group-hover:text-transparent group-hover:bg-gradient-to-tr group-hover:from-[#009e66] group-hover:to-[#01e998] group-hover:bg-clip-text">
-                View Works
-              </span>
-            </button>
-            <button className="btn-type-1 group">
-              <span className="group-hover:text-transparent group-hover:bg-gradient-to-tr group-hover:from-[#009e66] group-hover:to-[#01e998] group-hover:bg-clip-text">
-                Contact Me
-              </span>
-            </button>
+            <Link to={`#portfolio`}>
+              <button className="btn-type-1 group">
+                <span className="group-hover:text-transparent group-hover:bg-gradient-to-tr group-hover:from-[#009e66] group-hover:to-[#01e998] group-hover:bg-clip-text">
+                  View Works
+                </span>
+              </button>
+            </Link>
+            <Link to={`#contract`}>
+              <button className="btn-type-1 group">
+                <span className="group-hover:text-transparent group-hover:bg-gradient-to-tr group-hover:from-[#009e66] group-hover:to-[#01e998] group-hover:bg-clip-text">
+                  Contact Me
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
         {/* profile Image container */}
         <div className="500px:px-4 order-1 lg:order-2">
           <div className="animate-hero-animated-bg relative rounded-full overflow-hidden h-[320px] w-[320px] 500px:h-[425px] 500px:w-[425px] mx-auto md:h-[500px] md:w-[500px] lg:h-[400px] lg:w-[400px] xl:h-[450px] xl:w-[450px] 2xl:h-[500px] 2xl:w-[500px] flex justify-center items-center">
             <div className="h-[300px] w-[300px] 500px:h-[400px] 500px:w-[400px] md:h-[476px] md:w-[476px] lg:h-[376px] lg:w-[376px] xl:h-[420px] xl:w-[420px] 2xl:h-[475px] 2xl:w-[475px] overflow-hidden rounded-full">
-              <img src="/images/nn.jpeg" className="cover h-full" alt="" />
+              <img src={heroImg} className="cover h-full" alt="" />
             </div>
           </div>
         </div>

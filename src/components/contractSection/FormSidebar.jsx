@@ -3,10 +3,10 @@ import { ArrowRightIcon } from "@heroicons/react/24/solid";
 
 const FormSidebar = () => {
   return (
-    <div className=" basis-[50%] xl:basis-[60%] bg-background1 shadow-shadow1 rounded-2xl">
+    <div className="basis-full w-full lg:basis-[60%] bg-background1 shadow-shadow1 rounded-2xl">
       <form className="shadow-shadow1 px-4 py-8">
-        <div className="flex items-center justify-between w-full">
-          <div className="basis-1/2 px-4 py-3">
+        <div className="flex flex-col 500px:flex-row items-center justify-between w-full">
+          <div className="w-full basis-full 500px:basis-1/2 px-2 lg:px-4 py-3">
             <label
               htmlFor="contract-first-name"
               className="uppercase text-[#a0a8b3] font-montserrat font-medium tracking-[1px] text-xs block mb-3"
@@ -20,7 +20,7 @@ const FormSidebar = () => {
               type="text"
             />
           </div>
-          <div className="basis-1/2 px-4 py-3">
+          <div className="w-full basis-full 500px:basis-1/2 px-2 lg:px-4 py-3">
             <label
               htmlFor="contract-phone-number"
               className="uppercase text-[#a0a8b3] font-montserrat font-medium tracking-[1px] text-xs block mb-3"
@@ -36,7 +36,7 @@ const FormSidebar = () => {
           </div>
         </div>
 
-        <div className="email px-4 py-3">
+        <div className="email px-2 lg:px-4 py-3">
           <label
             htmlFor="email-address"
             className="uppercase text-[#a0a8b3] font-montserrat font-medium tracking-[1px] text-xs block mb-3"
@@ -50,7 +50,7 @@ const FormSidebar = () => {
             type="email"
           />
         </div>
-        <div className="subject px-4 py-3">
+        <div className="subject px-2 lg:px-4 py-3">
           <label
             htmlFor="subject"
             className="uppercase text-[#a0a8b3] font-montserrat font-medium tracking-[1px] text-xs block mb-3"
@@ -65,7 +65,7 @@ const FormSidebar = () => {
           />
         </div>
 
-        <div className="message px-4 py-3">
+        <div className="message px-2 lg:px-4 py-3">
           <label
             htmlFor="message"
             className="uppercase text-[#a0a8b3] font-montserrat font-medium tracking-[1px] text-xs block mb-3"
@@ -81,7 +81,7 @@ const FormSidebar = () => {
           />
         </div>
 
-        <div className="px-4 py-3">
+        <div className="px-2 lg:px-4 py-3">
           <button
             className="uppercase w-full rounded-md bg-background1 text-primary space-x-2 p-4 shadow-shadow1 hover:shadow-shadow3 hover:-translate-y-1 transition-all duration-300"
             type="submit"
